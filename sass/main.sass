@@ -1,0 +1,38 @@
+@import "bourbon"
+@import "vars.sass"
+@import "fonts.sass"
+@import url('https://fonts.googleapis.com/css?family=PT+Sans')
+
+//Load Libs SASS
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+body
+	font-size: 'PT Sans', sans-serif
+	font-size: $def_font
+	line-height: 1.4
+
+//ALWAYS END
+@import "media"

@@ -1,0 +1,36 @@
+{
+  "name": "motor",
+  "version": "1.0.0",
+  "description": "Motor Project",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.5.3",
+    "node-bourbon": "^4.2.3"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.2.0"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirillStativka/Projects.git"
+  },
+  "keywords": [
+    "moto"
+  ],
+  "author": "stativka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KirillStativka/Projects/issues"
+  },
+  "homepage": "https://github.com/KirillStativka/Projects#readme"
+}
