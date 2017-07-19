@@ -71,3 +71,6 @@ $(document).ready(function () {
 		return false;
 	});
 });
+$(document).ready(function () {
+	$("#tabs").tabs();
+});
