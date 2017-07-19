@@ -1,13 +1,236 @@
 @import "bourbon"
 @import "vars.sass"
+@import url('https://fonts.googleapis.com/css?family=PT+Sans')
 
-body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
-	overflow-x: hidden
 
-.hidden
-	display: none
+header
+	font-family: "PT Sans", sans-serif
+.black_line
+	background: #000
+	display: block
+.nav_top
+
+	display: inline-block
+	ul
+		margin: 0px
+		padding-left: 0px
+		li
+			display: inline-block
+			margin-right: 20px
+			&:last-child
+				margin-right: 0px
+			a
+				color: #fff
+				font-size: 14px
+.kabinet_top
+	background: #282828
+	vertical-align: middle
+	padding: 0 10px 2px 20px
+	p, .login, .registration
+		display: inline-block
+		vertical-align: middle
+		color: #fff
+		font-size: 18px
+		margin: 0px
+	p
+		margin-right: 15px
+	.login, .registration
+		a
+			font-size: 14px
+			color: #fff
+			border-bottom: 1px dashed #fff
+			&:hover
+				text-decoration: none
+				border: 0px
+	.login:after
+		content: ""
+		border: 1px solid #fff
+		width: 1px
+		height: 25px
+		margin: 0px 10px
+	&:before
+		content: ""
+		background: url(../img/icons/icon_set.png) no-repeat
+		background-position: 0px 0px
+		width: 16px
+		height: 16px
+		vertical-align: middle
+		display: inline-block
+		margin-right: 5px
+.header_center
+	border-bottom: 1px solid #f0f0f0
+.logo_top
+	background: #f0f0f0
+	a
+		line-height: 120px
+		vertical-align: middle
+		display: block
+		padding: 0px 10px
+		img
+			width: 100%
+			vertical-align: middle
+			transition: all 0.75s
+.logo_top:hover img
+	filter: contrast(200%)
+.nav_header
+	padding: 20px 15px
+	ul
+		margin: 0px
+		padding-left: 0px
+		li
+			display: inline-block
+			a
+				color: #000
+				font-size: 18px
+				border-bottom: 1px solid #fff
+				transition: all 0.75s
+			&:after
+				content: "."
+				margin: -35px 10px 0px 10px
+				color: #3cbcff
+				display: inline-block
+				width: 3px
+				height: 3px
+				vertical-align: middle
+			a:hover
+				color: #0274cb
+				border-bottom: 1px solid #0274cb
+				text-decoration: none
+		li:last-child:after
+			display: none
+.header_center
+	.col-sm-6
+		padding: 0px
+	.col-sm-2
+		padding-right: 0px
+	.col-sm-4
+		padding-left: 0px
+.search_header
+	padding: 0px 15px
+	button
+		background: #199bff
+		color: #fff
+		border: 0px
+		font-size: 14px
+		padding: 4px 10px
+		float: left
+		transition: all 0.75s
+		span
+			background: url(../img/icons/icon_set.png) no-repeat
+			background-position: 0px -21px
+			width: 22px
+			height: 16px
+			vertical-align: middle
+			display: inline-block
+			margin-left: 10px
+		&:active
+			background: #5cb4f7
+		&:hover
+			background: #2980cf
+
+	.input_holder
+		display: inline-block
+		max-width: 355px
+		width: 100%
+		position: relative
+		input[type="search"]
+			border: 1px solid #a5a5a5
+			font-size: 14px
+			padding: 3px 10px
+			text-indent: 40px
+			width: 100%
+		input[type="search"]::-webkit-input-placeholder
+				color: #a5a5a5
+		span
+			position: absolute
+			top: 4px
+			left: 10px
+			background: url(../img/icons/icon_set.png) no-repeat
+			background-position: 0 -90px
+			width: 25px
+			height: 22px
+.contact_top
+	background: #f6f6f6
+	display: inline-block
+	padding: 15px 20px
+	text-align: center
+	width: 100%
+	max-width: 200px
+	p
+		color: #000
+		font-size: 18px
+		font-weight: bold
+	a
+		color: #0274cb
+		font-size: 14px
+	.contact_top_phone
+		a
+			font-size: 18px
+			font-weight: bold
+			margin-top: 8px
+.cart_header
+	background: #0274cb
+	display: inline-block
+	padding: 15px 10px
+	width: 100%
+	max-width: 160px
+	color: #fff
+	.cart_icon
+		display: inline-block
+		width: 30px
+		text-align: center
+		vertical-align: super
+		position: relative
+		margin-right: 30px
+		span
+			background: url(../img/icons/icon_set.png) no-repeat
+			background-position: 0 -43px
+			width: 30px
+			height: 30px
+			display: block
+		&:after
+			content: ""
+			border: 1px solid #fff
+			width: 1px
+			margin: 0px 5px
+			height: 25px
+			display: block
+			position: absolute
+			right: -25px
+			top: 25%
+	.cart_info
+		display: inline-block
+		span
+			display: block
+.get_cart
+	text-align: center
+	a
+		color: #fff
+		font-size: 14px
+		border-bottom: 1px dashed #fff
+		transition: all 0.75s
+	a:hover
+		text-decoration: none
+		border: 0px
+.cart_header, .contact_top
+	margin-top: 6px
+.dilers_header
+	padding: 10px 0px
+	p
+		font-size: 16px
+		font-weight: bold
+		display: inline-block
+		text-transform: uppercase
+		margin:
+			right: 25px
+			left: 10px
+	.item_dilers
+		display: inline-block
+		margin-right: 25px
+		vertical-align: middle
+		&:last-child
+			margin-right: 0px
+		img
+			transition: all 0.75s
+	.item_dilers:hover img
+		filter: contrast(200%)
