@@ -25,6 +25,9 @@ header
 .kabinet_top
 	background: #282828
 	vertical-align: middle
+	width: 100%
+	max-width: 360px
+	float: right
 	padding: 0 10px 2px 20px
 	p, .login, .registration
 		display: inline-block
@@ -77,6 +80,9 @@ header
 	ul
 		margin: 0px
 		padding-left: 0px
+		display: flex
+		justify-content: flex-start
+		flex-flow: row wrap
 		li
 			display: inline-block
 			a
@@ -86,12 +92,12 @@ header
 				transition: all 0.75s
 			&:after
 				content: "."
-				margin: -35px 10px 0px 10px
+				margin: -5px 10px
 				color: #3cbcff
 				display: inline-block
 				width: 3px
 				height: 3px
-				vertical-align: middle
+				vertical-align: top
 			a:hover
 				color: #0274cb
 				border-bottom: 1px solid #0274cb
@@ -129,9 +135,7 @@ header
 			background: #2980cf
 
 	.input_holder
-		display: inline-block
-		max-width: 355px
-		width: 100%
+		display: flex
 		position: relative
 		input[type="search"]
 			border: 1px solid #a5a5a5
@@ -225,7 +229,6 @@ header
 			right: 25px
 			left: 10px
 	.item_dilers
-		display: inline-block
 		margin-right: 25px
 		vertical-align: middle
 		&:last-child
@@ -234,3 +237,13 @@ header
 			transition: all 0.75s
 	.item_dilers:hover img
 		filter: contrast(200%)
+.dilers_header_wrapper
+	display: flex
+	flex-flow: row wrap
+	justify-content: flex-start
+	align-items: center
+.cont_cart_wrap
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around
+	align-items: flex-start

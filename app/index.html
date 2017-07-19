@@ -35,7 +35,7 @@
 		<div class="black_line ">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-3 ">
+					<div class="col-sm-6 ">
 						<div class="nav_top">
 							<ul>
 								<li><a href="#">О компании</a></li>
@@ -44,8 +44,8 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-5"></div>
-					<div class="col-sm-4 offset-sm-5">
+
+					<div class="col-sm-6 offset-sm-5">
 						<div class="kabinet_top">
 							<p>Личный кабинет:</p>
 							<div class="login"><a href="#">Вход</a></div>
@@ -84,18 +84,20 @@
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<div class="contact_top">
-							<p>Наши контакты:</p>
-							<div class="contact_top_phone"><a href="tel:+79781234567">+7 978 123 45 67</a></div>
-							<div class="contact_top_mail"><a href="mailto:yachts@parts.com">yachts@parts.com</a></div>
-						</div>
-						<div class="cart_header">
-							<div class="cart_icon"><a href="#"><span></span></a></div>
-							<div class="cart_info">
-								<span>3 товара</span>
-								<span>24 499р.</span>
+						<div class="cont_cart_wrap">
+							<div class="contact_top">
+								<p>Наши контакты:</p>
+								<div class="contact_top_phone"><a href="tel:+79781234567">+7 978 123 45 67</a></div>
+								<div class="contact_top_mail"><a href="mailto:yachts@parts.com">yachts@parts.com</a></div>
 							</div>
-							<div class="get_cart"><a href="#">Оформить заказ</a></div>
+							<div class="cart_header">
+								<div class="cart_icon"><a href="#"><span></span></a></div>
+								<div class="cart_info">
+									<span>3 товара</span>
+									<span>24 499р.</span>
+								</div>
+								<div class="get_cart"><a href="#">Оформить заказ</a></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -105,13 +107,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<p>Являемся дилерами:</p>
-						<div class="item_dilers"><a href="#"><img src="img/dilers/diler_1.png" alt=""></a></div>
-						<div class="item_dilers"><a href="#"><img src="img/dilers/diler_2.png" alt=""></a></div>
-						<div class="item_dilers"><a href="#"><img src="img/dilers/diler_3.png" alt=""></a></div>
-						<div class="item_dilers"><a href="#"><img src="img/dilers/diler_4.png" alt=""></a></div>
-						<div class="item_dilers"><a href="#"><img src="img/dilers/diler_5.png" alt=""></a></div>
-						<div class="item_dilers"><a href="#"><img src="img/dilers/diler_6.png" alt=""></a></div>
+						<div class="dilers_header_wrapper">
+							<p>Являемся дилерами:</p>
+							<div class="item_dilers"><a href="#"><img src="img/dilers/diler_1.png" alt=""></a></div>
+							<div class="item_dilers"><a href="#"><img src="img/dilers/diler_2.png" alt=""></a></div>
+							<div class="item_dilers"><a href="#"><img src="img/dilers/diler_3.png" alt=""></a></div>
+							<div class="item_dilers"><a href="#"><img src="img/dilers/diler_4.png" alt=""></a></div>
+							<div class="item_dilers"><a href="#"><img src="img/dilers/diler_5.png" alt=""></a></div>
+							<div class="item_dilers"><a href="#"><img src="img/dilers/diler_6.png" alt=""></a></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -183,20 +187,32 @@
 					<aside class="sidebar">
 						<div class="sidebar_mnu">
 							<ul>
-								<li class="active"><a href="#"><span></span><p>Лодочные моторы</p></a>
+								<li><a href="#"><span></span><p>Лодочные моторы</p></a>
 									<ul class="drop_down">
 										<li><a href="#">YAMAHA</a></li>
 										<li><a href="#">2-х тактные моторы</a></li>
 										<li><a href="#">4-х тактные моторы</a></li>
 									</ul>
 								</li>
-								<li><a href="#"><span></span><p>Стационарные <br>двигателя</p></a></li>
+								<li><a href="#"><span></span><p>Стационарные <br>двигателя</p></a>
+									<ul class="drop_down">
+										<li><a href="#">YAMAHA</a></li>
+										<li><a href="#">2-х тактные моторы</a></li>
+										<li><a href="#">4-х тактные моторы</a></li>
+									</ul>
+								</li>
 								<li><a href="#"><span></span><p>Лодки из ПВХ</p></a></li>
 								<li><a href="#"><span></span><p>Гидроциклы</p></a></li>
 								<li><a href="#"><span></span><p>Мотоциклы</p></a></li>
 								<li><a href="#"><span></span><p>Запчасти</p></a></li>
 								<li><a href="#"><span></span><p>Масла</p></a></li>
-								<li><a href="#"><span></span><p>Гребные винты</p></a></li>
+								<li><a href="#"><span></span><p>Гребные винты</p></a>
+									<ul class="drop_down">
+										<li><a href="#">YAMAHA</a></li>
+										<li><a href="#">2-х тактные моторы</a></li>
+										<li><a href="#">4-х тактные моторы</a></li>
+									</ul>
+								</li>
 								<li><a href="#"><span></span><p>Аксессуары для<br> катеров и яхт</p></a></li>
 							</ul>
 						</div>
@@ -667,6 +683,7 @@
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 	<script src="js/common.js"></script>
 
