@@ -70,7 +70,21 @@ $(document).ready(function () {
 		$input.change();
 		return false;
 	});
+<<<<<<< HEAD
 });
 $(document).ready(function () {
 	$("#tabs").tabs();
+=======
+	$('.sidebar_mnu li').hover(function () {
+		if( $(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$('ul.drop_down').fadeToggle();
+		}
+		else {
+			$(this).addClass('active');
+			$('ul.drop_down').fadeToggle();
+		}
+
+	})
+>>>>>>> d29e5e9dcc93f731fbdf1cc27937fb61417b19a5
 });

@@ -120,14 +120,20 @@ body
 			color: #fff
 			line-height: 18px
 			display: inline-block
-			vertical-align: top
+			width: 100%
+		p
+			display: inline-block
+			vertical-align: text-bottom
+			height: 50px
 			padding: 0px 15px
+			line-height: 50px
 		span
 			background: #cc0000 url(../img/icons/icon_set.png) no-repeat
 			background-position: -41px 10px
 			width: 50px
-			height: 50px
+			height: 51px
 			display: inline-block
+			transition: all 0.75s
 		&:nth-child(2)
 			span
 				background-position: -97px 8px
@@ -152,6 +158,8 @@ body
 		&:nth-child(9)
 			span
 				background-position: -153px -42px
+	li:hover span
+		filter: contrast(200%)
 
 ul.drop_down
 	li
@@ -180,7 +188,8 @@ ul.drop_down
 		flex-flow: column wrap
 		align-items: center
 		margin-bottom: 15px
-		min-height: 200px
+		height: 200px
+		overflow: hidden
 		img
 			width: 100%
 	.item_tovar_descr
@@ -233,7 +242,130 @@ ul.drop_down
 			max-width: 180px
 			margin: 20px auto
 			text-align: center
-			padding: 3px 0px
+			padding: 3px
+			transition: all 0.75s
+			&:hover
+				text-decoration: none
+				background: #56b6ff
+
+//recomend block ---------------------------------------------------
+.recomend
+	margin: 30px 0px
+	background: url(../img/bg_recomend.png) no-repeat center
+	width: 100%
+	height: 350px
+	background-size: cover
+.recomend_wrap
+	display: flex
+.left_side_recomend
+	background: url(../img/bg_recomend_left_side.png) no-repeat top right
+	height: 350px
+	display: flex
+	width:
+	flex-flow: column wrap
+	justify-content: center
+	h3
+		display: flex
+		justify-content: flex-end
+		font-family: "american_captain"
+		font-size: 40px
+		color: #fff
+		line-height: 46px
+		text-align: center
+		margin-right: 30px
+	.but_get_info
+		display: flex
+		justify-content: flex-end
+		margin-top: 35px
+		a
+			display: block
+			margin-right: 50px
+			background: #fff
+			color: #000
+			font-weight: bold
+			font-size: 18px
+			width: 100%
+			max-width: 200px
+			height: 40px
+			border-radius: 4px
+			text-align: center
+			padding: 5px 0px
+			transition: all 0.75s
+			text-decoration: none
+		a:hover
+			background: #199bff
+			text-decoration: none
+.right_side_recomend
+	height: 350px
+	display: flex
+	flex-flow: column wrap
+	justify-content: center
+	h3
+		display: inline-table
+		font-family: "american_captain"
+		font-size: 48px
+		color: #fff
+		line-height: 56px
+		text-align: center
+		margin-left: 30px
+		span
+			color: #199bff
+	.but_get_info
+		display: flex
+		justify-content: flex-start
+		margin-top: 35px
+		a
+			display: block
+			margin-left: 90px
+			background: #199bff
+			color: #000
+			font-weight: bold
+			font-size: 18px
+			width: 100%
+			max-width: 200px
+			height: 40px
+			border-radius: 4px
+			text-align: center
+			padding: 5px 0px
+			transition: all 0.75s
+			text-decoration: none
+		a:hover
+			background: #fff
+			text-decoration: none
+.left_side_recomend, .right_side_recomend
+	width: 50%
+// aktcii block
+.get_free_deliver
+	background: url(../img/get_deliver_free_bg.png) top center
+	width: 100%
+	height: 100%
+	min-height: 300px
+	text-align: center
+	transition: all 0.75s
+	a
+		color: #fff
+		font-family: "american_captain"
+		font-size: 36px
+		padding: 15px 40px
+		line-height: 36px
+		display: block
+		min-height: 270px
+	&:hover
+		filter: contrast(160%)
+	a:hover
+		text-decoration: none
+.get_more_information
+	a
+		color: #0274cb
+		font-size: 16px
+		font-weight: bold
+.cost_old
+	font-size: 16px
+	text-decoration: line-through
+	color: #747474
+	text-decoration-color: #d20000
+	margin-left: -25px
+
 
 
 
