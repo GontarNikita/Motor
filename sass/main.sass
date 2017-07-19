@@ -180,7 +180,8 @@ ul.drop_down
 		flex-flow: column wrap
 		align-items: center
 		margin-bottom: 15px
-		min-height: 200px
+		height: 200px
+		overflow: hidden
 		img
 			width: 100%
 	.item_tovar_descr
@@ -233,7 +234,11 @@ ul.drop_down
 			max-width: 180px
 			margin: 20px auto
 			text-align: center
-			padding: 3px 0px
+			padding: 3px
+			transition: all 0.75s
+			&:hover
+				text-decoration: none
+				background: #56b6ff
 
 
 
