@@ -70,4 +70,15 @@ $(document).ready(function () {
 		$input.change();
 		return false;
 	});
+	$('.sidebar_mnu li').hover(function () {
+		if( $(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$('ul.drop_down').fadeToggle();
+		}
+		else {
+			$(this).addClass('active');
+			$('ul.drop_down').fadeToggle();
+		}
+
+	})
 });
