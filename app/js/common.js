@@ -47,7 +47,7 @@ $(window).load(function () {
 });
 $(document).ready(function () {
 
-$(".carousel_moto").owlCarousel({
+	$(".carousel_moto").owlCarousel({
 		autoPlay: 5000,
 		navigation: true,
 		slideSpeed: 300,
@@ -55,5 +55,19 @@ $(".carousel_moto").owlCarousel({
 		singleItem: true,
 		items: 1,
 		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
+	});
+	$('.minus').click(function () {
+		var $input = $(this).parent().find('input');
+		var count = parseInt($input.val()) - 1;
+		count = count < 1 ? 1 : count;
+		$input.val(count);
+		$input.change();
+		return false;
+	});
+	$('.plus').click(function () {
+		var $input = $(this).parent().find('input');
+		$input.val(parseInt($input.val()) + 1);
+		$input.change();
+		return false;
 	});
 });
