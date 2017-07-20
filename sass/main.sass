@@ -175,13 +175,15 @@ ul.drop_down
 			left: 50px
 		a
 			color: #000
-	li:first-child
+	li.active_cat
 		background: #e2e2e2
 		border-bottom: 1px solid #0274cb
 // tovaru + box_item------------------------------------------------
 .tovaru
 	margin:
 		top: 10px
+.item_tovar:hover img
+	transform: scale(1.2)
 .item_tovar
 	border-bottom: 1px solid #d3d3d3
 	margin-bottom: 20px
@@ -196,9 +198,13 @@ ul.drop_down
 		img
 			width: 100%
 			height: 100%
+			max-width: 220px
 			vertical-align: middle
+			transition: all 0.75s
 		a
 			display: block
+			width: 100%
+			text-align: center
 			height: 100%
 	.item_tovar_descr
 		p
@@ -377,11 +383,79 @@ ul.drop_down
 
 
 
-/// mobile mnu
+/// mobile mnu--------------------------------------------
 
 .mobile_holder,.nav_holder
 	display: none
-
+/// katalog tovaru_cat ---------------------------------------------------
+.info_item.this
+	color: #52a521
+.info_item.not_get
+	color: #bc740e
+.info_item.get_this
+	color: #ad2020
+.content_wrapper_inner.katalog_cat
+	margin-top: 30px
+// pagination-------------------------------------------------------
+.pagination
+	margin: 30px 0px
+	ul
+		li
+			display: inline-block
+			margin-right: 10px
+			a
+				display: block
+				border: 1px solid #000
+				width: 30px
+				height: 30px
+				text-align: center
+				vertical-align: middle
+				line-height: 30px
+				transition: all 0.75s
+			a:hover
+				text-decoration: none
+				background: #0274cb
+				color: #fff
+		li.active_page
+			a
+				border: 1px solid #0274cb
+				color: #0274cb
+			a:hover
+				color: #fff
+// katalog -----------------------------------------------
+.item_katalog_cat_wrapper
+	border-bottom: 1px solid #d3d3d3
+	margin-bottom: 20px
+	.img_holder
+		border: 1px solid #e2e2e2
+		display: flex
+		flex-flow: column wrap
+		align-items: center
+		margin-bottom: 15px
+		height: 200px
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			vertical-align: middle
+			transition: all 0.75s
+			max-width: 220px
+		a
+			display: block
+			height: 100%
+			width: 100%
+			text-align: center
+	.descr_katalog_cat
+		a
+			font-weight: bold
+			font-size: 18px
+			color: #000
+			display: block
+			margin-bottom: 20px
+.item_katalog_cat_wrapper:hover img
+	transform: scale(1.2)
+.popular_block
+	margin-top: 30px
 ///foter-----------------------------------------------
 footer
 	margin:
@@ -492,6 +566,7 @@ footer
 	border-top: 2px solid #e1e1e1
 	padding: 10px 0
 .breadcrumbs
+	margin-bottom: -30px
 	li
 		display: inline-block
 		font-size: 12px
@@ -512,8 +587,6 @@ footer
 				color: #0274cb
 			&::before
 				content: ""
-section.card_wrapper
-	margin: 0
 .article_card_content
 	padding-top: 30px
 .fotorama
