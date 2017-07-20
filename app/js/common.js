@@ -70,17 +70,16 @@ $(document).ready(function () {
 		$input.change();
 		return false;
 	});
-<<<<<<< HEAD
+
+});
+$(document).ready(function () {
+	$("#tabs").tabs();
+	$( "#accordion_instructions" ).accordion();
 
 });
 $(document).ready(function () {
 	$("#tabs").tabs();
 
-=======
-});
-$(document).ready(function () {
-	$("#tabs").tabs();
->>>>>>> 1b2f4eeb37c927fa45d3fdd3eee61f0d9aeec48c
 	$('.sidebar_mnu li').hover(function () {
 		if( $(this).hasClass('active')) {
 			$(this).removeClass('active');
@@ -90,8 +89,5 @@ $(document).ready(function () {
 		}
 
 	})
-<<<<<<< HEAD
 
-=======
->>>>>>> 1b2f4eeb37c927fa45d3fdd3eee61f0d9aeec48c
 });
