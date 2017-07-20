@@ -121,11 +121,12 @@ body
 			line-height: 18px
 			display: inline-block
 			width: 100%
+			position: relative
 		p
-			display: inline-block
-			vertical-align: text-bottom
-			height: 50px
-			padding: 0px 15px
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 67px
 		span
 			background: #cc0000 url(../img/icons/icon_set.png) no-repeat
 			background-position: -41px 10px
@@ -757,9 +758,29 @@ section.instructions_wrapper
 		line-height: 25px;
 
 
+/*-----------------Страница Гарантии----------------*/
 
 
+.content_wrapper_guarantee
+	.guarantee_description_content
+		ol
+			list-style-type: decimal
+			padding: 0 110px 0 55px
+			li
+				margin-bottom: 20px
+				color: #000000
 
+
+/*-----------------Страница О компании----------------*/
+
+.content_wrapper_about
+	.about_content
+		margin-bottom: 80px
+		p
+			margin-bottom: 25px
+			color: #000
+			&:last-child
+				margin-bottom: 0
 
 
 
