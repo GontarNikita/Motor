@@ -195,6 +195,11 @@ ul.drop_down
 		overflow: hidden
 		img
 			width: 100%
+			height: 100%
+			vertical-align: middle
+		a
+			display: block
+			height: 100%
 	.item_tovar_descr
 		p
 			font-weight: bold
@@ -339,12 +344,13 @@ ul.drop_down
 	width: 50%
 // aktcii block
 .get_free_deliver
-	background: url(../img/get_deliver_free_bg.png) top center
+	background: url(../img/get_deliver_free_bg.png) no-repeat top center
 	width: 100%
 	height: 100%
 	min-height: 300px
 	text-align: center
 	transition: all 0.75s
+	margin-bottom: 20px
 	a
 		color: #fff
 		font-family: "american_captain"
@@ -371,6 +377,10 @@ ul.drop_down
 
 
 
+/// mobile mnu
+
+.mobile_holder,.nav_holder
+	display: none
 
 ///foter-----------------------------------------------
 footer
