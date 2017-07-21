@@ -81,7 +81,14 @@ $(document).ready(function () {
 		$input.change();
 		return false;
 	});
-
+	$('.search_header form button').click(function(){
+		$('.change_search').fadeToggle();
+	});
+	$('.change_search li').click(function(){
+		var valList = $(this).text();
+		$(".dop_value").text(valList);
+		$('.change_search').fadeToggle();
+	});
 });
 $(document).ready(function () {
 	$("#tabs").tabs();

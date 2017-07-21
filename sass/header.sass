@@ -125,7 +125,7 @@ header
 		padding: 4px 10px
 		float: left
 		transition: all 0.75s
-		span
+		span.chevron
 			background: url(../img/icons/icon_set.png) no-repeat
 			background-position: 0px -21px
 			width: 22px
@@ -158,6 +158,21 @@ header
 			background-position: 0 -90px
 			width: 25px
 			height: 22px
+	form
+		position: relative
+		.change_search
+			position: absolute
+			background: #0274cb
+			top: 30px
+			width: 176px
+			z-index: 2222
+			color: #fff
+			display: none
+			li
+				cursor: pointer
+				padding: 5px
+				&:hover
+					background: #2980cf
 .contact_top
 	background: #f6f6f6
 	display: inline-block
